@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url(../images/game.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+header {
+    background-image: linear-gradient(to right, black, brown);
+    color: white;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    outline: 5px solid brown;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    border: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+main h1 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event {
+    padding: 10px;
+    margin: 5px;
+    border: 1px dotted #000;
+    background-color: #f9f9f9;
+    cursor: grab;
+    border-radius: 8px;
+}
+
+.dropzone {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#result {
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 8px;
+}
+
+.correct {
+    background-color: rgb(3, 255, 3);
+}
+
+.incorrect {
+    background-color: rgb(255, 89, 89);
+}
+
+#check-order, #restart {
+    background-color: rgba(74, 26, 157, 0.95);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#check-order:hover, #restart:hover {
+    background-color: rgba(74, 26, 157, 0.50);
+}

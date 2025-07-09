@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/Home.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="Agricultural.html">Agricultural Revolution</a></li>
+                <li><a href="Industrial.html">Industrial Revolution</a></li>
+                <li><a href="Digital.html">Digital Revolution</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="game.html">Challenge</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="article1">
+            <h1>The Three Revolutions that changed History!</h1>
+            <p>Discover more about the impacts, effects, and benefits of the three revolutions below!</p>
+        </section>
+
+        <section id="article2">
+            <h1>Agricultural Revolution</h1>
+            <p>In the Agricultural Revolution, there was growth in settled societies, domestication of plants and
+                animals, and a transition from nomadic living to permanent settlement.</p>
+            <br>
+            <p>It initiated a serious turn of events in human history toward organized farming, extra food production,
+                and laying the base for complex social structures.</p>
+            <br>
+            <p>If you want to learn more about the Agricultural Revolution, you can click below!</p>
+            <br>
+            <a href="Agricultural.html" id="agricultural-article">Agricultural Revolution</a>
+        </section>
+
+        <section id="article3">
+            <h1>Industrial Revolution</h1>
+            <p>The Industrial Revolution means the age of creating mechanical methods of production based on wide-scale
+                use of steam power, later electricity, enormous advances in infrastructure for transportation and
+                communication, and explosive growth of urban centers as industrial locations.</p>
+            <br>
+            <p>It changed the way economies, societies, and everyday life were organized, setting the world onto an
+                unprecedented course of technological innovation and productivity growth.</p>
+            <br>
+            <p>If you want to learn more about the Industrial Revolution, you can click below!</p>
+            <br>
+            <a href="Industrial.html" id="industrial-article">Industrial Revolution</a>
+        </section>
+
+        <section id="article4">
+            <h1>Digital Revolution</h1>
+            <p>The development of networked computing systems, proliferation of both personal and mobile computers,
+                internet and World Wide Web, digital communication platforms, and exponential growth in digital data
+                attended the Digital Revolution.</p>
+            <br>
+            <p>It changed the way information was created, accessed, shared, and stored and thus created profound
+                revolutions across industries, economies, and global connectivity.</p>
+            <br>
+            <p>If you want to learn more about the Digital Revolution, you can click below!</p>
+            <br>
+            <a href="Digital.html" id="digital-article">Digital Revolution</a>
+        </section>
+    
+        <section>
+            <h1>Quiz</h1>
+            <p>You can take a short quiz to test your understanding!</p>
+            <br>
+            <a href="quiz.html" id="start-quiz">Start</a>
+        </section>
+
+        <section>
+            <h1>Timeline Challenge</h1>
+            <p>You can proceed with this challenge to test your understanding!</p>
+            <br>
+            <a href="game.html" id="start-game">Start</a>
+        </section>
+
+        <section>
+            <h1>Sign Up for More Information</h1>
+            <form action="response.html" method="get">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="John" required><br><br>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" placeholder="20" max="100" min="10" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="john@email.com" required><br><br>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; History</p>
+    </footer>
+
+    <script>
+        var articles = document.querySelectorAll('#article1, #article2, #article3, #article4');
+
+        articles.forEach(articles => {
+            articles.addEventListener('click', () => {
+                if (articles.style.fontSize === 'larger') {
+                    articles.style.fontSize = '';
+                    articles.style.transform = '';
+                } else {
+                    articles.style.fontSize = 'larger';
+                    articles.style.transform = 'scale(1.1)';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Revolution</title>
+    <link rel="stylesheet" href="CSS/Industrial.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Agricultural.html">Agricultural Revolution</a></li>
+                <li><a href="#" class="current">Industrial Revolution</a></li>
+                <li><a href="Digital.html">Digital Revolution</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="game.html">Challenge</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="article1">
+            <h1>Industrial Revolution</h1>
+            <br>
+            <p>The Industrial Revolution ignited around the mid-17th century and concluded in the late 19th century,
+                ushering in a transformative era of technological and economic change.</p>
+            <br>
+            <p>It signaled a dramatic surge in both labor efficiency and land productivity, revolutionizing the way we
+                harness resources and achieve growth.</p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xLhNP0qp38Q?si=V2DwQstFHsKa5f0A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <section id="article2">
+            <h1>Events</h1>
+            <br>
+            <div class="event">
+                <p>Development of the Norfolk four-course rotation, which increased crop and livestock yields, improved
+                    soil fertility, and reduced fallow periods.</p>
+                <img src="images/norfolk_four-course_rotation.jpg" />
+            </div>
+            <div class="event">
+                <p>In the mid-18th century, Robert Bakewell and Thomas Coke introduced selective breeding and inbreeding
+                    to enhance livestock quality.</p>
+                <img src="images/selective_breeding.png" />
+            </div>
+            <div class="event">
+                <p>In 1764, James Hargreaves invented the Spinning Jenny, revolutionizing textile production.</p>
+                <img src="images/spinning_jenny.jpg" />
+            </div>
+            <div class="event">
+                <p>In 1775, James Watt improved the Steam Engine, transforming transportation and manufacturing.</p>
+                <img src="images/steam_engine.jpg" />
+            </div>
+            <div class="event">
+                <p>Richard Arkwright established the first industrial factory in the late 18th century.</p>
+            </div>
+            <div class="event">
+                <p>The Stockton and Darlington Railway (1825) and Liverpool and Manchester Railway (1830) revolutionized
+                    transportation.</p>
+                <img src="images/railway.jpg" />
+            </div>
+            <div class="event">
+                <p>The Crystal Palace Exhibition in 1851 showcased England's industrial leadership.</p>
+                <img src="images/crystal_palace.jpeg" />
+            </div>
+            <div class="event">
+                <p>The second Industrial Revolution in the late 19th century advanced steel production, electricity, and
+                    led to urbanization.</p>
+            </div>
+            <div class="event">
+                <p>However, it also introduced negative aspects like child labor and environmental pollution.</p>
+            </div>
+        </section>
+
+        <section id="article3">
+            <h1>Negative Impacts</h1>
+            <br>
+            <ul>
+                <li>Air pollution from factories and steam engines emitting smoke, soot, and carbon monoxide.</li>
+                <li>Water pollution from untreated sewage and chemical disposal into rivers.</li>
+                <li>Climate change due to the release of carbon dioxide from burning fossil fuels.</li>
+            </ul>
+        </section>
+
+        <section id="article4">
+            <h1>Environmental Conservation</h1>
+            <br>
+            <p>The harmful effects of industrial growth and tech breakthroughs made it clear we needed to protect nature
+                right away. This led to the rise of groups focused on saving the environment.</p>
+            <br>
+            <p>These groups aimed to tackle the rising worries about dirty air and water, destroyed habitats, and
+                dwindling natural resources.</p>
+            <br>
+            <p>Because of this, governments set up national parks and wildlife reserves. These areas keep natural
+                landscapes safe and protect animals at risk of dying out from human activities. </p>
+            <br>
+            <p>These protected spaces act as safe havens. Here, ecosystems can grow strong without the stress of
+                industrial growth.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Industrial Revolution</p>
+    </footer>
+
+    <script>
+        var articles = document.querySelectorAll('#article1, #article2, #article3, #article4');
+
+        articles.forEach(articles => {
+            articles.addEventListener('click', () => {
+                if (articles.style.fontSize === 'larger') {
+                    articles.style.fontSize = '';
+                    articles.style.transform = '';
+                } else {
+                    articles.style.fontSize = 'larger';
+                    articles.style.transform = 'scale(1.1)';
+                }
+            });
+        });
+
+        var images = document.querySelectorAll('img');
+
+        images.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.width = '50%';
+                image.style.transition = 'width 0.3s ease';
+            });
+
+            image.addEventListener('mouseout', () => {
+                image.style.width = '';
+            });
+        });
+    </script>
+</body>
+
+</html>

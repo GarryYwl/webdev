@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url(../images/quiz.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    font-family: 'Montserrat';
+}
+
+header {
+    background-image: linear-gradient(to right, black, purple);
+    color: white;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    outline: 5px solid rgb(50, 105, 161);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#next-btn, #retry-btn {
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#next-btn {
+    background-color: purple;
+    color: white;
+}
+
+#next-btn:hover {
+    background-color: skyblue;
+}
+
+#retry-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#retry-btn:hover {
+    background-color: #c62828;
+}
+
+.result {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+form label {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+[type="radio"] + label {
+    display: inline-flex;
+    align-items: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolution Timeline Challenge</title>
+    <link rel="stylesheet" href="CSS/game.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="events-section">
+            <h1>Timeline Challenge</h1>
+            <p>Drag the events to the answer boxes in the correct chronological order from left to right:</p>
+            <div class="timeline">
+                <div class="event" draggable="true" data-year="10000">First Agricultural Revolution (Neolithic
+                    Revolution)</div>
+                <div class="event" draggable="true" data-year="3000">Agricultural Techniques Spread Across Regions</div>
+                <div class="event" draggable="true" data-year="1500">Columbian Exchange</div>
+                <div class="event" draggable="true" data-year="1764">Spinning Jenny Invented</div>
+                <div class="event" draggable="true" data-year="1775">James Watt Improves the Steam Engine</div>
+                <div class="event" draggable="true" data-year="1825">Stockton and Darlington Railway</div>
+                <div class="event" draggable="true" data-year="1990">World Wide Web Invented</div>
+                <div class="event" draggable="true" data-year="2007">iPhone Introduced</div>
+            </div>
+        </section>
+
+        <section id="dropzones-section">
+            <h2>Answers</h2>
+            <hr>
+            <br>
+            <div class="timeline">
+                <div class="dropzone" data-index="0"></div>
+                <div class="dropzone" data-index="1"></div>
+                <div class="dropzone" data-index="2"></div>
+                <div class="dropzone" data-index="3"></div>
+                <div class="dropzone" data-index="4"></div>
+                <div class="dropzone" data-index="5"></div>
+                <div class="dropzone" data-index="6"></div>
+                <div class="dropzone" data-index="7"></div>
+            </div>
+            <button id="check-order">Check Order</button>
+            <button id="restart" class="hidden">Restart</button>
+            <br>
+            <br>
+            <p id="result"></p>
+            <script src="Js/game.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Challenge</p>
+    </footer>
+</body>
+
+</html>

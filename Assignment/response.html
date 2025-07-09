@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            background-image: url(../images/home.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: black;
+            font-family: 'Montserrat';
+        }
+
+        header {
+            background-image: linear-gradient(to right, black, purple);
+            color: white;
+            padding: 10px 0;
+            font-family: Arial, sans-serif;
+            outline: 5px solid rgb(50, 105, 161);
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: middle;
+            border: 10px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background-color: #555;
+        }
+
+        hr {
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+
+        article {
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+    </style>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <hr>
+        <br>
+        <h1>You have signed up!</h1>
+        <br>
+        <h4>Thank you for signing up!</h4>
+        <br>
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Age:</strong> <span id="age"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <br>
+        <hr>
+    </article>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var params = new URLSearchParams(window.location.search);
+        var name = params.get('name');
+        var age = params.get('age');
+        var email = params.get('email');
+
+        if (name && age && email) {
+            document.getElementById('name').textContent = name;
+            document.getElementById('age').textContent = age;
+            document.getElementById('email').textContent = email;
+        } else {
+            document.getElementById('response').innerHTML = '<p>Please try again.</p>';
+        }
+    });
+</script>
+
+</html>

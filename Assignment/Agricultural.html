@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Revolution</title>
+    <link rel="stylesheet" href="CSS/Agricultural.css">
+    <link rel="stylesheet" href="CSS/Main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#" class="current">Agricultural Revolution</a></li>
+                <li><a href="Industrial.html">Industrial Revolution</a></li>
+                <li><a href="Digital.html">Digital Revolution</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="game.html">Challenge</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+
+    <main>
+        <section id="article1">
+            <h1>Agricultural Revolution</h1>
+            <br>
+            <p>The First Agricultural Revolution (Neolithic Revolution) took place around 10,000 BC, when humans first
+                took up farming and most parts of the world began to practice agriculture.</p>
+            <br>
+            <p>Climate change, according to scientists, played a pivotal role in sparking the Neolithic Revolution,
+                transforming human history.</p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rboewQNMpdU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <section id="article2">
+            <h1>Events</h1>
+            <br>
+            <div class="event">
+                <p>The transformation from a society of hunters and gatherers to agricultural communities was displayed
+                    by the Neolithic Revolution which began in the Middle-East.</p>
+                <img src="images/neolithic-revolution.jpg" />
+            </div>
+            <div class="event">
+                <p>To cultivate crops more efficiently and manage water resources better, various irrigation systems and
+                    plow have been developed.</p>
+                <img src="images/plow.jpg" />
+            </div>
+            <div class="event">
+                <p>From 3000 BCE to 1500 CE, agricultural techniques spread across different regions, leading to
+                    increased food production and large population growth.</p>
+            </div>
+            <div class="event">
+                <p>In the 15th to the 16th century, the Columbian Exchange facilitated the global transfer of plants,
+                    animals, and diseases between the Old World and the New World.</p>
+                <img src="images/columbian-exchange.jpg" />
+            </div>
+        </section>
+
+        <article id="article3">
+            <table>
+                <caption>What has the Agricultural Revolution led to?</caption>
+                <thead>
+                    <tr>
+                        <th>Positive Impacts</th>
+                        <th>Negative Impacts</th>
+                        <th>What we can do?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plant domestication</td>
+                        <td>Deforestation</td>
+                        <td>Reforestation</td>
+                    </tr>
+                    <tr>
+                        <td>Better farming practices</td>
+                        <td>Soil depletion</td>
+                        <td>Implement crop rotation to enhance soil health</td>
+                    </tr>
+                    <tr>
+                        <td>Establishment of permanent settlements</td>
+                        <td>Destruction of Natural Habitat</td>
+                        <td>Establish protected areas and implement restoration projects</td>
+                    </tr>
+                    <tr>
+                        <td>Innovation of the Bronze Age and Iron Age</td>
+                        <td>Intensified conflicts and warfare among human societies</td>
+                        <td>Strengthen diplomatic efforts to prevent escalation of conflicts</td>
+                    </tr>
+                    <tr>
+                        <td>Trade and Conquest</td>
+                        <td>Destruction of Indigenous Cultures and Societies</td>
+                        <td>Advocate for the recognition and protection of indigenous rights</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Agricultural Revolution</p>
+    </footer>
+
+    <script>
+        var articles = document.querySelectorAll('#article1, #article2, #article3');
+
+        articles.forEach(article => {
+            article.addEventListener('click', () => {
+                if (article.style.fontSize === 'larger') {
+                    article.style.fontSize = '';
+                    article.style.transform = '';
+                } else {
+                    article.style.fontSize = 'larger';
+                    article.style.transform = 'scale(1.1)';
+                }
+            });
+        });
+
+        var images = document.querySelectorAll('img');
+
+        images.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.width = '50%';
+                image.style.transition = 'width 0.3s ease';
+            });
+
+            image.addEventListener('mouseout', () => {
+                image.style.width = '';
+            });
+        });
+    </script>
+</body>
+
+</html>

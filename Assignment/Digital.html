@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Revolution</title>
+    <link rel="stylesheet" href="CSS/Digital.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Agricultural.html">Agricultural Revolution</a></li>
+                <li><a href="Industrial.html">Industrial Revolution</a></li>
+                <li><a href="#" class="current">Digital Revolution</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="game.html">Challenge</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Digital Revolution</h1>
+            <p>Beginning in the 1950s and continuing to this day, the Digital Revolution has profoundly transformed our
+                world, reshaping how we live, work, and communicate.</p>
+            <br>
+            <p>This era of technological advancement has equipped us with an array of tools for connection, enhancing
+                our ability to communicate and collaborate globally.</p>
+            <br>
+            <p>As technology evolves, it continually enhances our ways of living, working, and communicating, driving
+                innovation and progress.</p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W985u0jPshs?si=tst3QM3nPCJZvosG"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h1>Events</h1>
+            <div class="event">
+                <p>In 1960, the invention of microchips and semiconductors, along with the definition of Moore's Law,
+                    marked significant advancements in technology.</p>
+                <img src="images/microchip.jpeg" />
+            </div>
+            <div class="event">
+                <p>In the late 1960s, the creation of ARPANET set the stage for the modern internet, laying the
+                    foundational infrastructure for global connectivity.</p>
+                <img src="images/arpanet.png" />
+            </div>
+            <div class="event">
+                <p>In 1990, Tim Berners-Lee revolutionized information retrieval by inventing the World Wide Web. The
+                    internet became publicly accessible, and in 1998, Google.com was founded.</p>
+                <img src="images/google.jpg" />
+            </div>
+            <div class="event">
+                <p>In 1994, Amazon revolutionized retail by pioneering e-commerce, reshaping the shopping experience
+                    with online purchasing and delivery services.
+                </p>
+                <img src="images/amazon.jpeg" />
+            </div>
+            <div class="event">
+                <p>By the late 1990s, the dot-com bubble led to a rapid rise and subsequent crash of internet-related
+                    stocks. On January 1, 2000, there was widespread concern over the Y2K issue.</p>
+            </div>
+            <div class="event">
+                <p>Facebook was launched in 2004, YouTube in 2005, and Twitter in 2006, reshaping how people connect and
+                    engage in conversations.</p>
+                <img src="images/fb-yt-tw.jpg" />
+            </div>
+            <div class="event">
+                <p>In 2007, the introduction of the iPhone revolutionized accessibility to digital services and
+                    information, forever changing the way we connect and communicate.
+                </p>
+                <img src="images/iphone.jpg" />
+            </div>
+            <div class="event">
+                <p>In 2008, the advent of Bitcoin and blockchain technology ushered in a groundbreaking era of
+                    transaction security, transforming the landscape of digital finance.
+                </p>
+                <img src="images/bitcoin.jpg" />
+            </div>
+        </section>
+
+        <section>
+            <h1>Benefits of the Digital Revolution</h1>
+            <p>There has been a change in communication, wherein people are able to communicate instantly across the
+                globe through emails, social media, and video calls.</p>
+            <br>
+            <p>Information has become accessible to an unprecedented extent where it is just a click away on the
+                Internet.</p>
+            <br>
+            <p>This revolution has changed industries in many ways, greatly improving efficiency and opening new avenues
+                for innovation and entrepreneurship.</p>
+            <br>
+            <p>The Digital Revolution has improved convenience and connectedness, leading towards a globalized world
+                that is more knowledgeable.</p>
+        </section>
+    </main>
+
+    <script>
+        var articles = document.querySelectorAll('section');
+
+        articles.forEach(articles => {
+            articles.addEventListener('click', () => {
+                if (articles.style.fontSize === 'larger') {
+                    articles.style.fontSize = '';
+                    articles.style.transform = '';
+                } else {
+                    articles.style.fontSize = 'larger';
+                    articles.style.transform = 'scale(1.1)';
+                }
+            });
+        });
+
+        var images = document.querySelectorAll('img');
+
+        images.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.width = '50%';
+                image.style.transition = 'width 0.3s ease';
+            });
+
+            image.addEventListener('mouseout', () => {
+                image.style.width = '';
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; Digital Revolution</p>
+    </footer>
+</body>
+
+</html>
